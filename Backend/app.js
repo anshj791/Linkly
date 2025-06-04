@@ -16,7 +16,7 @@ dotenv.config("./.env");
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const allowedOrigins = ["http://localhost:5173", "https://linkl.netlify.app"];
+const allowedOrigins = process.env.CLIENT_ORIGIN?.split(',');
 
 app.use(cors({
   origin: function (origin, callback) {
