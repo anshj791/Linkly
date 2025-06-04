@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 
 
 app.use(cors({
-        origin: ["http://localhost:5173", "https://linkl.netlify.app"]
+        origin: ["http://localhost:5173", "https://linkl.netlify.app"],
         credentials: true
 }))
 app.use(cookieParser()) 
