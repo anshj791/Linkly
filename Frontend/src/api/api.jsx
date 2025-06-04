@@ -1,17 +1,9 @@
 export const  apis = {
 
-    shorturlApi:"http://localhost:5000/api/create",
-    signinapi:"http://localhost:5000/api/auth/register",
-    loginapi:"http://localhost:5000/api/auth/login",
+    shorturlApi:"https://linkly-o220.onrender.com/api/create",
+    signinapi:"https://linkly-o220.onrender.com/api/auth/register",
+    loginapi:"https://linkly-o220.onrender.com/api/auth/login",
+    me:"https://linkly-o220.onrender.com/api/auth/me"
+
     
-
-
-
-
-
-
-
-
-
-
 }

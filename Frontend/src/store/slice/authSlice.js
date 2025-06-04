@@ -2,13 +2,14 @@
 
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
+import { apis } from "../../api/api";
 
 // Async thunk to fetch current logged-in user using credentials
 export const fetchCurrentUser = createAsyncThunk(
   "auth/fetchCurrentUser",
   async (_, { rejectWithValue }) => {
     try {
-      const res = await axios.get("http://localhost:5000/api/auth/me", {
+      const res = await axios.get(apis.me, {
         withCredentials: true, // Required to send cookies
         
       });
